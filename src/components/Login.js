@@ -27,26 +27,29 @@ function Login() {
     return (
         <div className='login-container'>
             <form className='login-form-container'>
-                <h3>login</h3>
+                <h3>Instaclone</h3>
                 <label>
-                    Username&nbsp;
                    <input 
                     value={formValues.username}
                     onChange={handleChange}
                     name='username'
                     type='text'
+                    placeholder='Username'
+                    className='login-input'
                 /> 
                 </label>
                 <label>
-                    Password&nbsp;
                    <input 
                     value={formValues.password}
                     onChange={handleChange}
                     name='password'
                     type='text'
+                    placeholder='Password'
+                    className='login-input'
                 /> 
                 </label>
-                <button>Log In</button>
+                <span className='span-password'>Forgot password?</span>
+                <button className='login-btn'>Log In</button>
             </form>
             <div className='login-signup-container'>
                 <p>Don't have an account? <span className='login-signup-text'>Sign up</span></p>
