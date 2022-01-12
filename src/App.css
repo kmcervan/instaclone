@@ -7,16 +7,47 @@
   color: black;
   background-color: blue;
 } */
-
+h3 {
+  font-family: 'Cookie', cursive;
+  font-size: 3rem;
+  color: #393939;
+}
 
 /*********************** LOGIN *************************/
 .login-container {
-  background-color: whitesmoke;
+  margin: 0 auto;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: black solid 1px;
+  width: 340px;
+  height: 450px;
 }
 .login-form-container {
   background-color: white;
   display: flex;
-  
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-input {
+  width: 78%;
+  height: 32px;
+  margin-bottom: 5px;
+  background-color: #fafafa;
+  border: gray solid 1px;
+  border-radius: 3px;
+  padding-left: 7px;
+  color: #d7d6d7;
+}
+.login-btn {
+  width: 78%;
+  border-radius: 3px;
+  height: 32px;
+  background-color: #b2dffc;
+  color: white;
+  border: none;
 }
 /* .App-header {
   background-color: #282c34;
