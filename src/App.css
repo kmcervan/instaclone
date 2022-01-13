@@ -1,38 +1,49 @@
+body {
+  background-color: #fafafa;
+}
 .App {
   text-align: center;
   color: black;
-  background-color: red;
 }
 /* .navbar {
   color: black;
   background-color: blue;
 } */
-h3 {
+
+h3 {/* H3 only for 'instagram' */
   font-family: 'Cookie', cursive;
   font-size: 3rem;
   color: #393939;
 }
 
 /*********************** LOGIN *************************/
-.login-container {
+.register-login-container {
   margin: 0 auto;
-  background-color: white;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  border: black solid 1px;
   width: 340px;
+}
+.login-container {/*** Whole container ****/
   height: 450px;
 }
-.login-form-container {
+.login-containers {/*** Includes form and signup containers ***/
+  border: gray solid 1px;
   background-color: white;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
-
+.login-form-container {
+  justify-content: flex-start;
+  align-items: center;
+  height: 80%;
+}
+.login-signup-container {
+  margin-top: 10px;
+  justify-content: center;
+  height: 16%;
+}
 .login-input {
-  width: 78%;
+  width: 250px;
   height: 32px;
   margin-bottom: 5px;
   background-color: #fafafa;
@@ -44,18 +55,25 @@ h3 {
 .login-btn {
   width: 78%;
   border-radius: 3px;
-  height: 32px;
+  height: 28px;
   background-color: #b2dffc;
   color: white;
   border: none;
+  margin-top: 5px;
 }
-/* .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: black;
-} */
+.span-password {
+  margin-top: 20px;
+  color: #393939;
+}
+.login-signup-text {
+  color: blue;
+}
+/************************* LOGIN END ****************************/
+
+/*********************** REGISTER START *************************/
+.register-span {
+  font-weight: bold;
+}
+.terms-container {
+  width: 230px;
+}

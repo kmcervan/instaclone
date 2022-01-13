@@ -25,50 +25,55 @@ function Register() {
         [event.target.name]: event.target.value })
     }
     return (
-        <div>
-            <form>
-                <h2>Instaclone</h2>
+        <div className='register-container register-login-container'>
+            <form className='login-form-container login-containers'>
+                <h3>Instagram</h3>
                 <p>Sign up to see instaclone</p>
                 <label>
-                    Email&nbsp;
                    <input 
                     value={formValues.email}
                     onChange={handleChanges}
                     name='email'
                     type='email'
+                    placeholder='Email'
+                    className='login-input intro-font'
                 /> 
                 </label>
                 <label>
-                    Full Name&nbsp;
                    <input 
                     value={formValues.fullName}
                     onChange={handleChanges}
                     name='fullName'
                     type='text'
+                    placeholder='Full Name'
+                    className='login-input intro-font'
                 /> 
                 </label>
                 <label>
-                    Username&nbsp;
                    <input 
                     value={formValues.username}
                     onChange={handleChanges}
                     name='username'
                     type='text'
+                    placeholder='Username'
+                    className='login-input intro-font'
                 /> 
                 </label>
                 <label>
-                    Password&nbsp;
                    <input 
                     value={formValues.password}
                     onChange={handleChanges}
                     name='password'
                     type='text'
+                    placeholder='Password'
+                    className='login-input intro-font'
                 /> 
                 </label>
-                <button>Sign up</button>
+                <button className='login-btn'>Sign up</button>
+                <p className='terms-container'>By signing up, you agree to our <span className='register-span'>Terms</span>, <span className='register-span'>Data Policy</span> and <span className='register-span'>Cookies Policy.</span></p>
             </form>
-            <div>
-                <p>Have an account? <span>Log in</span></p>
+            <div className='login-signup-container login-containers'>
+                <p>Have an account? <span className='login-signup-text'>Log in</span></p>
             </div>
         </div>
     )

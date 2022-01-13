@@ -25,9 +25,9 @@ function Login() {
     }
 
     return (
-        <div className='login-container'>
-            <form className='login-form-container'>
-                <h3>Instaclone</h3>
+        <div className='login-container register-login-container'>
+            <form className='login-form-container login-containers'>
+                <h3>Instagram</h3>
                 <label>
                    <input 
                     value={formValues.username}
@@ -35,7 +35,7 @@ function Login() {
                     name='username'
                     type='text'
                     placeholder='Username'
-                    className='login-input'
+                    className='login-input intro-font'
                 /> 
                 </label>
                 <label>
@@ -45,14 +45,15 @@ function Login() {
                     name='password'
                     type='text'
                     placeholder='Password'
-                    className='login-input'
+                    className='login-input intro-font'
                 /> 
                 </label>
-                <span className='span-password'>Forgot password?</span>
                 <button className='login-btn'>Log In</button>
+                <a className='span-password'><span className='intro-font'>Forgot password?</span></a>
+                
             </form>
-            <div className='login-signup-container'>
-                <p>Don't have an account? <span className='login-signup-text'>Sign up</span></p>
+            <div className='login-signup-container login-containers'>
+                <p className='intro-font'>Don't have an account? <span className='login-signup-text intro-font'>Sign up</span></p>
             </div>
         </div>
     )
