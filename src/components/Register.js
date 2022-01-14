@@ -28,7 +28,7 @@ function Register() {
         <div className='register-container register-login-container'>
             <form className='login-form-container login-containers'>
                 <h3>Instagram</h3>
-                <p>Sign up to see instaclone</p>
+                <p>Sign up to see photos and videos from your friends.</p>
                 <label>
                    <input 
                     value={formValues.email}
