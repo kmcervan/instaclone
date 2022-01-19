@@ -12,50 +12,60 @@ body {
 
 h3 {/* H3 only for 'instagram' */
   font-family: 'Cookie', cursive;
-  font-size: 3rem;
+  font-size: 2.1rem;
   color: #393939;
 }
 /*********************** NavBar ************************/
 * {
-  border: blue solid 1px;
+  /* border: blue solid 1px; */
 }
 .navbar {
   margin: 0 auto;
-  border: red solid 1px;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   width: 100%;
   height: 50px;
+  max-width: 950px;
+}
+.nav-div-h3 {
+  width: 115px;
 }
 .nav-h3 {
-  width: 30%;
-  padding: 0%;
-  margin: 0%;
-  
+  text-align: left;
+  padding: 0% 2%;
+  margin: 3% 0%;
 }
 .nav-search-bar {
   width: 30%;
 }
 .search-bar {
-  width: 90%;
+  margin: 2%;
+  width: 70%;
   height: 30px;
   border-radius: 5px;
   border: gray solid 1px;
-  padding-left: 7px;
+  padding-left: 30px;
   color: #d7d6d7;
+  background-image: url('pictures/search.png');
+  background-position: left center;
+  outline: 0;
+  background-repeat: no-repeat;
+  background-size: 25px;
+}
+.search-icon {
+  width: 25px;
 }
 .icon-container {
+  width: 300px;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
-  width: 40%;
+  justify-content: space-evenly;
+  align-items: center;
 }
-.navbar-icons {
-  width: 20px;
-  
-}
-img .navbar-icons {
-  width: 100px;
+#icons {
+  width: 21px;
+  height: 21px;
 }
 
 /*********************** LOGIN *************************/
