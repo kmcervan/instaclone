@@ -7,15 +7,17 @@ import home from '../pictures/home.png';
 import messenger from '../pictures/messenger.png';
 import more from '../pictures/plus.png';
 import user from '../pictures/user.png';
+import search from '../pictures/search.png';
 
 
 function Navbar() {
     return (
         <div className='navbar'>
-            <div className='nav-h3'>
-                <h3>Instagram</h3>  
+            <div className='nav-div-h3'>
+                <h3 className='nav-h3'>Instagram</h3>  
             </div>
             <div className='nav-search-bar'>
+                {/* <img className='search-icon' src={search} /> */}
                 <input
                     placeholder='Search'
                     name='searchBar'
@@ -24,12 +26,12 @@ function Navbar() {
                 />
             </div>
             <div className='icon-container'>
-                <img classname='navbar-icons' src={home} />
-                <img classname='navbar-icons' src={messenger} />
-                <img classname='navbar-icons' src={more} />
-                <img classname='navbar-icons' src={compass} />
-                <img classname='navbar-icons' src={heart} />
-                <img classname='navbar-icons' src={user} />
+                <img id='icons' src={home} />
+                <img id='icons' src={messenger} />
+                <img id='icons' src={more} />
+                <img id='icons' src={compass} />
+                <img id='icons' src={heart} />
+                <img id='icons' src={user} />
             </div>    
         </div>
     )

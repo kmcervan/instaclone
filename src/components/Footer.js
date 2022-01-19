@@ -13,6 +13,7 @@ function Footer() {
                 <a href="https://www.flaticon.com/free-icons/compass" title="compass icons">Compass icons created by Pixel perfect - Flaticon</a>
                 <a href="https://www.flaticon.com/free-icons/add" title="add icons">Add icons created by reussy - Flaticon</a>
                 <a href="https://www.flaticon.com/free-icons/user" title="user icons">User icons created by Freepik - Flaticon</a>
+                <a href="https://www.flaticon.com/free-icons/search" title="search icons">Search icons created by Taufik - Flaticon</a>
             </div>
             
         </div>
